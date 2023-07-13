@@ -1,0 +1,26 @@
+/* Background gradient animation */
+body {
+  background: linear-gradient(-45deg, #4b0082, #1e90ff, #00ced1, #ba55d3, #4b0082);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+:root {
+  --my-bg-color: #181848;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-my-dark {
+  background-color: var(--my-bg-color) !important;
+}
